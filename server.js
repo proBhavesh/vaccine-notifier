@@ -23,7 +23,7 @@ var yyyy = today.getFullYear();
 today = dd + "-" + mm + "-" + yyyy;
 // console.log(today);
 
-setInterval(() => mailNotifier("122001", today), 3600);
+setInterval(() => mailNotifier("301427", today), 3600000);
 
 // starting the serve
 app.listen(process.env.PORT, () => {

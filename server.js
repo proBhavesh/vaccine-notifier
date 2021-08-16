@@ -26,7 +26,10 @@ today = dd + "-" + mm + "-" + yyyy;
 setInterval(() => mailNotifier("301427", today), 1740000);
 
 app.get("/", (req, res) => {
-    res.send("The is fucking running ###################### wooow");
+    res.send(
+        mailNotifier("301427", today),
+        "The is fucking running ###################### wooow"
+    );
 });
 // starting the serve
 app.listen(process.env.PORT, () => {

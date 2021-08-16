@@ -28,6 +28,8 @@ const mailNotifier = async (pincode, date) => {
 			});
 		}
 	});
+
+	return await res;
 };
 
 module.exports = { mailNotifier };
